@@ -9,12 +9,12 @@ body {
 header {
     width: 100%;
     background-color: #00BFF3;
-    padding: 10px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 header img {
-    width: 60%;
+    width: 50%;
     max-width: 800px;
     height: auto;
     object-fit: scale-down;
@@ -63,8 +63,8 @@ footer {
 }
 
 .store-buttons img {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 50px;
     transition: transform 0.3s ease;
 }
 
@@ -98,13 +98,13 @@ footer {
     }
 
     .store-buttons img {
-        width: 130px;
+        height: 40px;
     }
 }
 
 @media (max-width: 480px) {
     header img {
-        width: 80%;
+        width: 70%;
     }
 
     .content {
@@ -116,6 +116,6 @@ footer {
     }
 
     footer img {
-        width: 100px;
+        height: 50px;
     }
 }
