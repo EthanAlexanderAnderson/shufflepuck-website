@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shufflepuck.ethananderson.ca/sitemap.xml
