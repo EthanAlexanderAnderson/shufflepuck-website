@@ -1,2 +1,2 @@
 # shufflepuck-website
-https://ethanalexanderanderson.github.io/shufflepuck-website/
+[https://shufflepuck.ethananderson.ca/](https://shufflepuck.ethananderson.ca/)
