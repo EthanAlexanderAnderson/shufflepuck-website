@@ -60,6 +60,7 @@ footer {
 
 .store-buttons a {
     margin: 0 15px;
+    text-decoration: none;
 }
 
 .store-buttons img {
