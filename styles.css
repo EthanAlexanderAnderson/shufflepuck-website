@@ -9,7 +9,7 @@ body {
 header {
     width: 100%;
     background-color: #00BFF3;
-    padding: 50px 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ header img {
 main {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 2.4rem 1.2rem;
 }
 
 .content {
@@ -31,41 +31,39 @@ main {
     flex-direction: row;
     max-width: 80%;
     background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 2rem;
+    border-radius: 0.75rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     align-items: center;
-    gap: 20px;
+    gap: 1.2rem;
 }
 
 .screenshot {
     width: 50%;
     max-width: 300px;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.content p {
+.game-description {
     flex: 1;
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0;
+    font-size: 1.2rem;
 }
 
 footer {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
 }
 
 .store-buttons a {
-    margin: 0 15px;
+    margin: 0 1rem;
     text-decoration: none;
 }
 
 .store-buttons img {
     width: auto;
-    height: 50px;
+    height: 4rem;
     transition: transform 0.3s ease;
 }
 
@@ -76,7 +74,7 @@ footer {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     main {
-        padding: 20px;
+        padding: 1.2rem;
     }
 
     .content {
@@ -86,20 +84,20 @@ footer {
 
     .screenshot {
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom: 1.2rem;
     }
 
-    .content p {
-        font-size: 16px;
+    .game-description {
+        font-size: 1rem;
         text-align: center;
     }
 
     footer {
-        padding: 15px;
+        padding: 1rem;
     }
 
     .store-buttons img {
-        height: 40px;
+        height: 3rem;
     }
 }
 
@@ -117,6 +115,6 @@ footer {
     }
 
     footer img {
-        height: 50px;
+        height: 3rem;
     }
 }
