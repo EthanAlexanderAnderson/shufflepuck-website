@@ -22,56 +22,75 @@ header img {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 2.4rem 1.2rem;
 }
 
 .content {
     display: flex;
     flex-direction: row;
-    max-width: 80%;
+    justify-content: center;
+    width: 80%;
     background-color: #fff;
     padding: 2rem;
     border-radius: 0.75rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     align-items: center;
-    gap: 1.2rem;
+    gap: 2rem;
+    margin:2rem;
 }
 
 .screenshot {
     width: 50%;
     max-width: 300px;
     border-radius: 0.75rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.game-description {
+article {
     flex: 1;
     font-size: 1.2rem;
 }
 
-footer {
-    background-color: #ffffff;
-    padding: 2rem;
-    text-align: center;
+h1, h2 { font-size: 2em }
+
+.link-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-.store-buttons a {
-    margin: 0 1rem;
+.link-buttons a {
     text-decoration: none;
 }
 
-.store-buttons img {
+.link-buttons img {
     width: auto;
     height: 4rem;
     transition: transform 0.3s ease;
 }
 
-.store-buttons img:hover {
+.link-buttons img:hover {
     transform: scale(1.1);
 }
 
+footer .link-buttons {
+    background-color: #ffffff;
+    padding: 2rem;
+    justify-content: center
+}
+
 /* Mobile Adjustments */
+@media (max-width: 960px) {
+    .link-buttons {
+        flex-direction: column;
+    }
+    footer .link-buttons {
+        flex-direction: row;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         padding: 1.2rem;
@@ -87,17 +106,31 @@ footer {
         margin-bottom: 1.2rem;
     }
 
-    .game-description {
+    .article {
         font-size: 1rem;
         text-align: center;
     }
 
-    footer {
-        padding: 1rem;
+    h1, h2 { font-size: 1.66em }
+
+    .link-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .store-buttons img {
-        height: 3rem;
+    .link-buttons img {
+        width: 16rem;
+        height: auto;
+    }
+
+    footer .link-buttons {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 530px) {
+    footer .link-buttons {
+        flex-direction: column;
     }
 }
 
@@ -114,7 +147,5 @@ footer {
         width: 90%;
     }
 
-    footer img {
-        height: 3rem;
-    }
+    h1, h2 { font-size: 1.33em }
 }
